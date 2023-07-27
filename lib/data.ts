@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import todochallengerImg from "@/public/todochallenger.png";
+import igniteteamsImg from "@/public/igniteteams.png";
+import appplanetasImg from "@/public/app-planetas.png";
 
 export const links = [
   {
@@ -58,21 +58,21 @@ export const projectsData = [
     description:
       "API de tarefas com Spring Boot",
     tags: ["Spring Boot", "Spring MVC", "Spring Data JPA", "SpringDoc OpenAPI 3", "Mysql"],
-    imageUrl: corpcommentImg,
+    imageUrl: todochallengerImg,
   },
   {
     title: "IgniteTeams",
     description:
       "Uma aplicação de turmas e separação dos times",
     tags: ["React Native", "TypeScript"],
-    imageUrl: rmtdevImg,
+    imageUrl: igniteteamsImg,
   },
   {
     title: "App-Planetas",
     description:
       "Tudo sobre planetas do nosso sistema solar!",
     tags: ["Kotlin", "Android"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: appplanetasImg,
   },
 ] as const;
 
