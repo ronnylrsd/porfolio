@@ -1,4 +1,5 @@
 import Intro from "@/components/intro";
+import Sectiondivider from "@/components/section-divider";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
     px-4
     ">
       <Intro />
+      <Sectiondivider />
     </main>
   )
 }
