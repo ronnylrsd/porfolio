@@ -59,6 +59,7 @@ export const projectsData = [
       "API de tarefas com Spring Boot",
     tags: ["Spring Boot", "Spring MVC", "Spring Data JPA", "SpringDoc OpenAPI 3", "Mysql"],
     imageUrl: todochallengerImg,
+    link: "https://github.com/ronnylrsd/todolist-challenger"
   },
   {
     title: "IgniteTeams",
@@ -66,6 +67,7 @@ export const projectsData = [
       "Uma aplicação de turmas e separação dos times",
     tags: ["React Native", "TypeScript"],
     imageUrl: igniteteamsImg,
+    link: "https://github.com/ronnylrsd/igniteteams",
   },
   {
     title: "App-Planetas",
@@ -73,6 +75,7 @@ export const projectsData = [
       "Tudo sobre planetas do nosso sistema solar!",
     tags: ["Kotlin", "Android"],
     imageUrl: appplanetasImg,
+    link: "https://github.com/ronnylrsd/app-planetas",
   },
 ] as const;
 
