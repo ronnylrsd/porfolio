@@ -25,7 +25,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Fale Comigo</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Por favor, entre em contato comigo pelo meu e-mail{" "}
         <a className="underline" href="mailto:ronnylrsd@gmail.com">
           ronnylrsd@gmail.com
@@ -33,7 +33,7 @@ export default function Contact() {
         ou por esse formulário
       </p>
 
-      <form className="mt-10 ml-4 flex flex-col" 
+      <form className="mt-10 ml-4 flex flex-col dark:text-black" 
       action={async (formData) => {
         const { data, error } = await sendEmail(formData);
 
@@ -44,8 +44,8 @@ export default function Contact() {
 
         toast.success('Email enviado com sucesso!');
       }}>
-        <input name="senderEmail" type="email" required maxLength={50} className="h-14 px-4 rounded-lg borderBlack" placeholder="Seu email" />
-        <textarea name="message" required maxLength={250} className="h-52 my-3 rounded-lg borderBlack p-4" placeholder="Sua Mensagem"></textarea>
+        <input name="senderEmail" type="email" required maxLength={50} className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none" placeholder="Seu email" />
+        <textarea name="message" required maxLength={250} className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none" placeholder="Sua Mensagem"></textarea>
         <SubmitBtn />
       </form>
     </motion.section>
