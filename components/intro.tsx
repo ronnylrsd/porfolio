@@ -9,9 +9,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Início", 0.5);
+  const { setActiveSection, setTimeOfLastCLick } = useActiveSectionContext();
   
   return (
     <section ref={ref} id="home" className="scroll-mt-[100rem] mb-28 max-w-[50rem] text-center sm:mb-0">
@@ -72,14 +74,17 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-         
+          onClick={() => {
+            setActiveSection("Contato");
+            setTimeOfLastCLick(Date.now());
+          }}
         >
           Entre em contato comigo <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-1
          rounded-full outline-none focus:scale-110 hover:scale-110 
-         active:scale-105 transition cursor-pointer border border-black/10"
+         active:scale-105 transition cursor-pointer borderBlack"
          href="/CV.pdf"
          download
         >
@@ -88,7 +93,7 @@ export default function Intro() {
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-1
          rounded-full hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15] 
-         active:scale-105 transition cursor-pointer border border-black/10"
+         active:scale-105 transition cursor-pointer borderBlack"
          href="https://www.linkedin.com/in/ronnylrsd/" target="_blank"
         >
           <BsLinkedin />
@@ -96,7 +101,7 @@ export default function Intro() {
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-1
          rounded-full text-[1.35rem] hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15]
-         active:scale-105 transition cursor-pointer border border-black/10"
+         active:scale-105 transition cursor-pointer borderBlack"
          href="https://github.com/ronnylrsd" target="_blank"
         >
           <FaGithubSquare />
