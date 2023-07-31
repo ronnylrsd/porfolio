@@ -62,7 +62,7 @@ export default function Intro() {
         coeficiente de rendimento e{" "}
         <span className="font-bold">desenvolvedor</span>. Eu me divirto
         construindo <span className="italic">sites & apps</span>. Meu foco é o{" "}
-        <span className="underline">React e Java</span>.
+        <span className="underline">Typescript e Java</span>.
       </motion.h1>
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
