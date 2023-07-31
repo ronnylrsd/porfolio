@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Estágio Desenvolvimento Front-End",
     location: "Recife, PE",
     description:
-      "Eu trabalho como estagiário front-end (5 meses), onde utilizo o React, Typescript e tailwind CSS.",
+      "Eu trabalho como estagiário front-end (5 meses), onde utilizo o React, Typescript e Tailwind CSS.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
