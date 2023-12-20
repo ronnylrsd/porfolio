@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import todochallengerImg from "@/public/todochallenger.png";
 import igniteteamsImg from "@/public/igniteteams.png";
 import appplanetasImg from "@/public/app-planetas.png";
+import lexihippoImg from "@/public/lexihippo.png";
 
 export const links = [
   {
@@ -53,6 +54,18 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "LexiHippo",
+    description: "Aplicação full-stack com potencial para identificar crianças com dislexia e servir de meio de intervenção fonoaudiológica",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Javascript",
+      "Firebase",
+    ],
+    imageUrl: lexihippoImg,
+    link: "https://lexihippo.vercel.app/",
+  },
   {
     title: "Todolist-challenger",
     description: "API de tarefas com Spring Boot",
