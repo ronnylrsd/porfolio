@@ -36,20 +36,36 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Residência em Software",
+    location: "Recife, PE",
+    description:
+      "Residência em Software na Universidade Federal de Pernambuco. O programa tem duração de 1 ano e é voltado para a formação de profissionais de software. Em parceria com a Motorola, Centro de Informática da UFPE e FADE-UFPE.",
+    icon: React.createElement(LuGraduationCap),
+    date: "FEV 2024",
+  },
+  {
+    title: "Mestrado em Engenharia de Sistemas",
+    location: "Recife, PE",
+    description:
+      "Mestrado em Engenharia de Sistemas na Universidade de Pernambuco.",
+    icon: React.createElement(LuGraduationCap),
+    date: "FEV 2024",
+  },
+  {
     title: "Bacharelado em Ciência da Computação",
     location: "Recife, PE",
     description:
-      "Graduando em ciência da computação na Universidade Católica de Pernambuco.",
+      "Graduado em ciência da computação na Universidade Católica de Pernambuco.",
     icon: React.createElement(LuGraduationCap),
-    date: "2020",
+    date: "FEV 2020 - DEZ 2023",
   },
   {
     title: "Estágio Desenvolvimento Front-End",
     location: "Recife, PE",
     description:
-      "Eu trabalho como estagiário front-end (5 meses), onde utilizo o React, Typescript e Tailwind CSS.",
+      "Eu trabalhei como estagiário front-end (7 meses), onde utilizo o React, Typescript e Tailwind CSS.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "MAR 2023 - AGO 2023",
   },
 ] as const;
 

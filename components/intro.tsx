@@ -57,12 +57,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Olá, eu sou o Ronny.</span> Um graduando em
-        ciência da computação com <span className="font-bold">alto</span>{" "}
-        coeficiente de rendimento e{" "}
-        <span className="font-bold">desenvolvedor</span>. Eu me divirto
-        construindo <span className="italic">sites & apps</span>. Meu foco é o{" "}
-        <span className="underline">Typescript e Java</span>.
+        <span className="font-bold">Olá, eu sou o Ronny.</span> Graduado em
+        ciência da computação, <span className="font-bold">Mestrando</span>{" "}
+        em Engenharia de Sistemas e{" "}
+        <span className="font-bold">Residente</span> em Software. Eu me divirto
+        testando <span className="italic">sites & apps</span>. Meu foco é o{" "}
+        <span className="underline">Python e Java</span>.
       </motion.h1>
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
